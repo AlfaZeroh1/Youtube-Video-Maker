@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Scroll</title>
+    <link rel="stylesheet" href="ytscroll100.css">
+</head>
+<body>
+    <div id='window'>
+        <!--<div id='box2' class='box'><div class='boxh'><div class='hc'><div class='hct'></div><div class='hcp'></div></div></div><div class='boxt'></div><div class='boxp'></div><div class='boxi'><img src='icons/fat.png'></div></div>-->
+        
+    </div>
+    <div id='form' class='box'>
+        <div class='boxh'>
+            <div class='hc'>
+                <div class='hct'>
+                    <div class="ffboxno">
+                        <input type="text" type="text" id="boxno" placeholder="NO" class="fboxno"/>
+                    </div>
+                </div>
+                <div class='hcp'><input type="text" id="boxname" placeholder="STAT NAME" class="fbname"></div>
+            </div>
+        </div>
+        <div class='boxt'><input type="text"  id="boxt" placeholder="TITLE" class="fbt"></div>
+        <div class='boxp'><input type="text"  id="boxp" placeholder="EXPLANATION" class="fbp"></div>
+        <div class='boxi'>
+            <div class="fboxi">
+                <input type="text"  id="boximg" placeholder="IMAGE LINK" class="fbi">
+                <div class="btns">
+                    <input type="button" id="boxadd" value="START" onclick='if(confirm("Start Scrolling?"))sclorr();' class="fbadd2">
+                    <input type="button" id="boxadd" value="DEL" onclick='if(confirm("Delete last Box?"))toa();' class="fbadd">
+                    <input type="button" id="boxadd" value="ADD" onclick="ongeza()" class="fbadd2">
+                </div>
+                <div id="boxerr">Kazi Ianze</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ytscroll100.js"></script>
+</body>
+</html>

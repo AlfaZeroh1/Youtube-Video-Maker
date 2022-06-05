@@ -1,0 +1,230 @@
+/*******Make Global variables***********/
+:root{
+    /*Colors*************/
+    --pri: black;
+    --sec: gold;
+    --tert: #999;
+    --pritext: #000;
+    --invtext: #fff;
+    --wdW: 1920px;
+    --prifont: calc(var(--wdW) / 192);
+    --wdH: calc(var(--wdW) * 1080 / 1920);
+    --boxW: calc(var(--wdW) * 0.25);
+    --boxH: var(--wdH);
+    --boxhH:calc(var(--boxH) * 9 /27);
+    --boxtH:calc(var(--boxH) * 3 / 27);
+    --boxpH:calc(var(--boxH) * 3 / 27);
+    --boxiH:calc(var(--boxH) * 12 / 27);
+}
+html{
+    background-color: var(--pri);
+    color: var(--pritext);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+/********Window Frame******************************************************************************/
+#window{
+    border: 1px solid var(--sec);
+    width: fit-content;
+    height: var(--wdH);
+    display: flex;
+    flex-direction: row;
+}
+/***Individual Box***********************************************************************************/
+.box{
+    width: var(--boxW);
+    height: var(--boxH);
+    border-right: 3px solid var(--sec);
+}
+/****Box Sub-sections**********************************************************************************/
+.boxh{
+    height: var(--boxhH);
+    width: 100%;
+    background-color: var(--pri);
+}
+        /****Box Header Sub Sections*********/
+        .hc{
+            width: calc(var(--boxhH) * 0.9);
+            height: calc(var(--boxhH) * 0.9);
+            margin-inline: auto;
+            position: relative;
+            top: calc(var(--boxH) * 0.02);
+            border-radius: 100%;
+            background-color: var(--sec);
+            text-align: center;
+        }        
+             /****Box Header Circle Sub Sections*********/
+             .hct{
+                 position: relative;
+                 top: 20%;
+                 height: 50%;
+                 width: 90%;
+                 margin-inline: auto;
+                 font-size: calc(var(--prifont) * 15);
+                 font-weight: 600;
+             }
+             .hcp{
+                padding-top: 5%;
+                position: relative;
+                font-size: calc(var(--prifont) * 2.5);
+                font-weight: bold;
+                top: 20%;
+                height: 20%;
+                width: 65%;
+                margin-inline: auto;
+            }
+
+
+.boxt{
+    height: var(--boxtH);
+    width: 100%;
+    background-color: var(--sec);
+    border-right: 3px solid var(--pri);
+    font-size: calc(var(--prifont) * 5.5);
+    text-align: center;
+    font-weight: 600;
+}
+.boxp{
+    height: var(--boxpH);
+    width: 100%;
+    background-color: var(--pri);
+    text-align: center;
+    color: var(--invtext);
+    font-size: calc(var(--prifont) * 3.5);
+    word-wrap: break-word;
+}
+.boxi{
+    height: var(--boxiH);
+    width: 100%;
+    /*background: linear-gradient(var(--pri),var(--tert),var(--tert)); */
+    background-color: #fff;
+}
+.boxi img{
+    width: 96%;
+    height: 96%;
+    position: relative;
+    left: 2%;
+    top: 2%;
+    object-fit: cover;
+}
+/***FORM***********************************************************************************/
+#form{
+    position: fixed;
+    top: 0;
+    left: 10px;
+}
+.ffboxno{
+    position: relative;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    display: flex;
+}
+.fboxno{
+    border: none;
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+    background: var(--pri);
+    color: var(--invtext);
+}
+.fbname{
+    border: none;
+    width: 90%;
+    height: 90%;
+    background: var(--pri);
+    color: var(--invtext);
+    font-size: 20px;
+}
+.fbt{
+    border: none;
+    position: relative;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    background: var(--pri);
+    color: var(--invtext);
+    font-size: 30px;
+}
+.fbp{
+    border: none;
+    position: relative;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    background: var(--sec);
+    color: var(--pritext);
+    font-size: 20px;
+}
+.fbi{
+    border: none;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    background: var(--sec);
+    color: var(--pritext);
+    font-size: 20px;
+}
+.fboxi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.btns{
+    position: relative;
+    top: 15%;
+    height: 15%;
+    width: 100%;
+}
+.fbadd{
+    border-radius: 20px;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: red;
+    color: #fff;
+    border: none;
+}
+.fbadd:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #000;
+    color: red;
+    cursor: pointer;
+}
+.fbadd2{
+    border-radius: 20px;
+    font-size: 40px;
+    
+    background-color: lightgreen;
+    color: #000;
+    border: none;
+}
+.fbadd2:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #000;
+    color: lightgreen;
+    cursor: pointer;
+}
+#boxerr{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    background-color: #000;
+    color: red;
+    font-size: 35px;
+}
+/*** END OF FORM***********************************************************************************/
+#fw{
+    width: 100vw;
+    height: 100vh;
+}
