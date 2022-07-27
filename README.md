@@ -1,1 +1,2 @@
 # Youtube-Video-Maker
+I have a Youtube channel that is educational . It deals with data and facts thus I built a web page that accepts data from a user and prepares a slide show that is well-framed to match the 16:9 landscape or 9:16 aspect ration that Youtube videos use. It is a very efficient method as the site does everything for you. No need to use a video editor software. I am yet to add an audio upload feature that integrates audio to the slideshow. This site reduces the duration taken to create a Youtube video from 1 full day to just 1 hour.
